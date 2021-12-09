@@ -18,16 +18,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 .main {
   font-family: 'Montserrat', sans-serif;
+  color:var(--title);
   &.jobs {
     padding: var(--padding-main) 0 0;
     .main-screen {
-      height: calc(100vh - var(--padding-main));
+      height: calc(94vh - var(--padding-main));
       background: url(../images/man.svg);
       background-repeat: no-repeat;
 
       background-position: center 130%;
       @media (max-width: 1440px) {
-        background-size: 68%;
+        background-size: 64%;
       }
       .jobs__title {
         color: var(--accent);
@@ -38,6 +39,7 @@
       .jobs__subtitle {
         font-weight: 600;
         font-size: 36px;
+        color:var(--black)
       }
     }
     .blue-bg {
@@ -159,8 +161,9 @@
         .item__name {
           font-size: 22px;
           font-weight: 600;
+          line-height: 30px;
           text-align: center;
-          line-height: 1.2;
+       
           color: var(--title);
         }
       }
@@ -223,6 +226,7 @@
                 width: 100%;
                 height: 100%;
                 bottom: 0;
+                padding: 48px 0;
               }
             }
           }
@@ -390,6 +394,8 @@
       width: 100%;
     }
     .faq__wrapper {
+      max-width: 1220px;
+      margin:48px auto 0 auto;
       .faq__item {
         cursor: pointer;
         &.active {
@@ -403,10 +409,16 @@
           padding: 28px;
           font-size: 22px;
           font-weight: 600;
-          line-height: 1.2;
+          line-height: 30px;
           border-bottom: 1px solid rgba(29, 29, 29, 0.15);
           display: flex;
+          color:var(--title);
           align-items: center;
+          justify-content: space-between;
+          span {
+           display: block;
+           max-width: 1095px;
+          }
         }
         .faq__content-wrapper {
           height: 0;
@@ -459,15 +471,15 @@
     flex: 1 1 80%;
     opacity: 0;
     visibility: hidden;
-    transition: .5s;
+    transition: 0.5s;
     &.active {
       opacity: 1;
       visibility: visible;
     }
     .close {
       position: absolute;
-      right:24px;
-      top:24px;
+      right: 24px;
+      top: 24px;
       cursor: pointer;
       padding: 10px;
       background: var(--white);
@@ -492,11 +504,11 @@
           font-weight: 600;
           text-decoration: none;
           &:before {
-            content:'';
+            content: '';
             position: absolute;
             width: 100%;
             height: 100%;
-            top:0;
+            top: 0;
             left: 0;
           }
         }
