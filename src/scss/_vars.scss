@@ -1,0 +1,29 @@
+:root {
+  --accent: #034f9a;
+  --black: #222;
+  --white: #fff;
+  --title: #1d1d1d;
+  --text: #545454;
+  --blue: #f7f9fc;
+  --padding-main: 100px;
+}
+
+.svg-animated {
+  .dashed {
+    stroke-dasharray: 10;
+  }
+  .path {
+    stroke-dasharray: 2200;
+    stroke-dashoffset: 2200;
+    animation: dash 5s linear forwards;
+  }
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dashoffset: 2200;
+  }
+}
