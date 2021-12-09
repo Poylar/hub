@@ -15,7 +15,8 @@
   .path {
     stroke-dasharray: 2200;
     stroke-dashoffset: 2200;
-    animation: dash 5s linear forwards;
+
+    animation: dash 4s linear 0s 1 reverse forwards;
   }
 }
 
