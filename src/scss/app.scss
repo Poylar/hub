@@ -22,13 +22,16 @@
   &.jobs {
     padding: var(--padding-main) 0 0;
     .main-screen {
-      height: calc(94vh - var(--padding-main));
+      height: calc(90vh - var(--padding-main));
       background: url(../images/man.svg);
       background-repeat: no-repeat;
 
       background-position: center 130%;
       @media (max-width: 1440px) {
-        background-size: 64%;
+        background-size: 80%;
+      }
+      @media (max-width:1360px) {
+        background-size: 60%;
       }
       .jobs__title {
         color: var(--accent);
