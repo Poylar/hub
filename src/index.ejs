@@ -55,7 +55,7 @@
     <h5 class="subtitle">Wir sind ständig auf der Suche nach Fachkräften für unser Unternehmen</h5>
     <div class="block grid-3">
       <% for(var i = 0;i< 6;i++) {%>
-      <div class="grid__item" data-vacancy="Empfacer" style="background: url('./images/oper.jpg')">
+      <div class="grid__item" data-vacancy="Empfacer" style="background-image: url('./images/oper.jpg')">
         <div class="item__name">Empfangskraft</div>
       </div>
       <% } %>
@@ -150,20 +150,20 @@
               fill="#034F9A"
             />
             <path
-              class="path"
-              stroke-linejoin="round"
-              stroke="#034f9a"
-              stroke-miterlimit="10"
-              d="M1300 93C1300 42.1898 1258.59 0.999998 1207.5 1C1156.41 1 1115 42.1898 1115 93C1115 143.81 1073.59 185 1022.5 185C971.414 185 930 143.81 930 93C930 42.1898 888.586 0.999998 837.5 1C786.414 1 745 42.1898 745 93C745 143.81 703.586 185 652.5 185C601.414 185 560 143.81 560 93C560 42.1898 518.586 0.999998 467.5 1C416.414 1 375 42.1898 375 93C375 143.81 333.586 185 282.5 185C231.414 185 190 143.81 190 93C190 42.1898 148.586 1 97.5 1C46.4137 0.999998 5 42.1898 5 93"
-            />
-            <path
               class="dashed"
               stroke-linejoin="round"
               stroke-miterlimit="10"
               d="M1300 93C1300 42.1898 1258.59 0.999998 1207.5 1C1156.41 1 1115 42.1898 1115 93C1115 143.81 1073.59 185 1022.5 185C971.414 185 930 143.81 930 93C930 42.1898 888.586 0.999998 837.5 1C786.414 1 745 42.1898 745 93C745 143.81 703.586 185 652.5 185C601.414 185 560 143.81 560 93C560 42.1898 518.586 0.999998 467.5 1C416.414 1 375 42.1898 375 93C375 143.81 333.586 185 282.5 185C231.414 185 190 143.81 190 93C190 42.1898 148.586 1 97.5 1C46.4137 0.999998 5 42.1898 5 93"
-              stroke="#fff"
+              stroke="#034f9a"
               stroke-width="2px"
               stroke-dasharray="10 10"
+            />
+            <path
+              class="path"
+              stroke-linejoin="round"
+              stroke="#fff"
+              stroke-miterlimit="10"
+              d="M1300 93C1300 42.1898 1258.59 0.999998 1207.5 1C1156.41 1 1115 42.1898 1115 93C1115 143.81 1073.59 185 1022.5 185C971.414 185 930 143.81 930 93C930 42.1898 888.586 0.999998 837.5 1C786.414 1 745 42.1898 745 93C745 143.81 703.586 185 652.5 185C601.414 185 560 143.81 560 93C560 42.1898 518.586 0.999998 467.5 1C416.414 1 375 42.1898 375 93C375 143.81 333.586 185 282.5 185C231.414 185 190 143.81 190 93C190 42.1898 148.586 1 97.5 1C46.4137 0.999998 5 42.1898 5 93"
             />
 
             <defs>
@@ -307,11 +307,13 @@
       <div class="faq__wrapper block">
         <div class="faq__item">
           <div class="faq__title">
-            <span> Welche Qualifikationen/Voraussetzungen muss ich für den Bereich Sicherheitsdienst haben, um bei Hauschildt & Blunck zu arbeiten?</span>
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="9" width="2" height="20" rx="1" class="plus" fill="#034F9A" />
-              <rect x="20" y="9" width="2" height="20" rx="1" transform="rotate(90 20 9)" fill="#034F9A" />
-            </svg>
+            <span> Welche Qualifikationen/ Voraussetzungen muss ich für den Bereich Sicherheitsdienst haben, um bei Hauschildt & Blunck zu arbeiten?</span>
+            <div class="faq__svg">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="9" width="2" height="20" rx="1" class="plus" fill="#034F9A" />
+                <rect x="20" y="9" width="2" height="20" rx="1" transform="rotate(90 20 9)" fill="#034F9A" />
+              </svg>
+            </div>
           </div>
           <div class="faq__content-wrapper">
             <div class="faq__content">
@@ -345,6 +347,7 @@
         kommunikative und offene Art wirst Du dafür sorgen, dass das Telefon niemals stillsteht. Durch die anhaltenden Digitalisierungsprozesse, werden auch Deine technischen Fähigkeiten genug Platz
         zum Entfalten bekommen, speziell Kundenanfragen wie auch interne Geschehnisse wirst Du am Computer bearbeiten.
       </div>
+      <div class="content__close d-md-none d-sm-block">Close job description</div>
       <div class="content__link">
         <a href="">Angebot anfragen </a>
         <div class="arrow">

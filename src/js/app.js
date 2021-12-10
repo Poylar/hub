@@ -40,7 +40,7 @@ const modalWrapper = document.querySelector('.modal__wrapper');
 const modal = document.querySelectorAll('.modal__item');
 document.addEventListener('click', (e) => {
   const target = e.target.closest('.grid__item[data-vacancy]');
-  if ((modalWrapper.classList.contains('active') && !e.target.closest('.modal__item')) || e.target.closest('.close')) {
+  if ((modalWrapper.classList.contains('active') && !e.target.closest('.modal__item')) || e.target.closest('.close') || e.target.closest('.content__close')) {
     [modalWrapper, modal].forEach((elem) => {
       elem.classList.remove('active');
     });

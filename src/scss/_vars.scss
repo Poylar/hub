@@ -11,12 +11,13 @@
 .svg-animated {
   .dashed {
     stroke-dasharray: 10;
+    stroke-width: 3px;
   }
   .path {
     stroke-dasharray: 2200;
     stroke-dashoffset: 2200;
-
-    animation: dash 4s linear 0s 1 reverse forwards;
+    stroke-width: 4px;
+    animation: dash 4s linear 0s 1 forwards;
   }
 }
 
