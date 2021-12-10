@@ -18,7 +18,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 .main {
   font-family: 'Montserrat', sans-serif;
-  color:var(--title);
+  color: var(--title);
   &.jobs {
     padding: var(--padding-main) 0 0;
     .main-screen {
@@ -39,16 +39,12 @@
       .jobs__subtitle {
         font-weight: 600;
         font-size: 36px;
-        color:var(--black)
+        color: var(--black);
       }
     }
     .blue-bg {
       max-width: initial;
-      background: radial-gradient(
-        43.75% 46.91% at 50% 48.67%,
-        #0859a9 0%,
-        #04417c 100%
-      );
+      background: radial-gradient(43.75% 46.91% at 50% 48.67%, #0859a9 0%, #04417c 100%);
       background-repeat: no-repeat;
       padding: 100px 0;
       display: flex;
@@ -92,7 +88,7 @@
           font-weight: 600;
           margin: 0 0 32px 0;
           font-size: 36px;
-          color:#fff;
+          color: #fff;
         }
         .desc {
           text-align: center;
@@ -164,7 +160,7 @@
           font-weight: 600;
           line-height: 30px;
           text-align: center;
-       
+
           color: var(--title);
         }
       }
@@ -258,7 +254,7 @@
               z-index: 2;
               height: 100%;
               opacity: 0;
-              transition: 0.4s;
+              transition: .2s;
               .item__position {
                 position: absolute;
                 bottom: 87px;
@@ -296,7 +292,7 @@
               flex-direction: column;
               justify-content: flex-end;
               font-size: 22px;
-              transition: 0.5s;
+              transition: 0.2s;
             }
           }
         }
@@ -396,9 +392,14 @@
     }
     .faq__wrapper {
       max-width: 1220px;
-      margin:48px auto 0 auto;
+      margin: 48px auto 0 auto;
       .faq__item {
         cursor: pointer;
+        &:hover {
+          .faq__title {
+            color:var(--accent);
+          }
+        }
         &.active {
           svg {
             .plus {
@@ -413,12 +414,13 @@
           line-height: 30px;
           border-bottom: 1px solid rgba(29, 29, 29, 0.15);
           display: flex;
-          color:var(--title);
+          color: var(--title);
           align-items: center;
           justify-content: space-between;
+          transition: .5s;
           span {
-           display: block;
-           max-width: 1095px;
+            display: block;
+            max-width: 1095px;
           }
         }
         .faq__content-wrapper {
@@ -427,7 +429,7 @@
           transition: 0.5s;
           .faq__content {
             padding: 2rem;
-            line-height:145%;
+            line-height: 145%;
             font-size: 18px;
           }
         }
@@ -474,8 +476,8 @@
     visibility: hidden;
     transition: 0.5s;
     &.active {
-      opacity: 1;
-      visibility: visible;
+      animation: fromTop .6s forwards;
+   
     }
     .close {
       position: absolute;

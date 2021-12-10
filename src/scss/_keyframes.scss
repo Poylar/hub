@@ -17,3 +17,16 @@
     margin: 0 0 48px 0;
   }
 }
+
+@keyframes fromTop {
+  0% {
+   top:30%;
+   opacity: 0;
+   visibility: hidden;
+  }
+  100% {
+    top:50%;
+    opacity: 1;
+    visibility: visible;
+  }
+}
